@@ -1,0 +1,26 @@
+{
+    "name": "nicolas2-dev/two-installer",
+    "description": "A composer installer for Two 1.x packages.",
+    "type": "composer-installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicolas Devoy",
+            "email": "nicolas@nicodev.fr",
+            "homepage": "https://nicodev.fr",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "composer/composer": "2.2.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Two\\Composer\\": "src"
+        }
+    },
+    "extra": {
+        "class": "Two\\Composer\\Installer\\PackageInstaller"
+    },
+    "minimum-stability": "dev"
+}
